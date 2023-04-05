@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App-Metabolismo-Basal</title>
+</head>
+<body>
+    
+    
+    <div class="container">
+        <h1>Calculadora metabolismo basal</h1>
+        <div class="container-fields">
+            <label>Sexo</label>
+            <select id="sexo" class="input_form">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+            </select>
+        </div>
+        <div class="container-fields">
+            <label>Altura en CM</label>
+            <input id="altura" class="input_form" type="number" required>
+        </div>
+        <div class="container-fields">
+            <label>Peso en KG</label>
+            <input id="peso" class="input_form" type="number" required>
+        </div>
+        <div class="container-fields">
+            <label>Edad</label>
+            <input id="edad" class="input_form" type="number" required>
+        </div>
+        <div class="container-fields">
+            <label >Nivel de Actividad</label>
+            <select id="nivelActividad" class="input_form">
+                <option value="poco">Poco o ningún ejercicio</option>
+                <option value="ligero">Ejercicio ligero (1 - 3 días por semana)</option>
+                <option value="moderado">Ejercicio moderado (3 - 5 días por semana)</option>
+                <option value="fuerte">Ejercicio fuerte (6 - 7 días por semana)</option>
+                <option value="muyfuerte">Ejercicio muy fuerte (dos veces al día, entrenamientos muy duros)</option>
+            </select>
+        </div>
+        <div class="container-fields">
+            <button type="button" class="input_form" onclick="CalcularTMB()">Calcular</button>
+        </div>
+        <div class="container-fields">
+            <input id="resultado" class="input_form" placeholder="Tus calorias de mantenimiento son..." disabled>
+        </div>
+        <!-- <div id="image" class="image-container" style="visibility: hidden;">
+            <img src="img/yeahbuddy.jpg" alt="">
+        </div> -->
+        
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+
+</html>

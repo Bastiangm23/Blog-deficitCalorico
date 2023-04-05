@@ -92,6 +92,10 @@ body {
   margin: 10px;
 }
 
+.activo{
+  background-color: gray;
+}
+
 
 @media (max-height: 650px) {
   .puntos{

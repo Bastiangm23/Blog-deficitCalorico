@@ -14,6 +14,12 @@ puntos.forEach((punto, i) => {
     // Con translateX movemos nuestro div del interior del carrusel
     // a la posicion que nos dio en el resultado de la operacion
     interior_carrusel.style.transform = `translateX(${operacion}%)`;
+  
+    puntos.forEach((punto, i) => {
+      puntos[i].classList.remove("activo");
+    });
+    puntos[i].classList.add("activo");
+
   });
   
 });

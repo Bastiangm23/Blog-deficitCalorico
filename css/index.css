@@ -25,6 +25,7 @@ body {
 }
 
 .navbar-items{
+  padding-left: 47%;
 }
 
 .main-container {
@@ -62,8 +63,7 @@ body {
 
 .puntos {
   list-style: none;
-  width: 20%;
-
+  min-width: 20%;
   background-color: transparent;
   padding: 1em;
   margin: auto;
@@ -84,4 +84,17 @@ body {
   opacity: 0.6;
   border-radius: 50%;
   margin: 10px;
+}
+
+
+@media (max-height: 650px) {
+  .puntos{
+    top: -20%;
+  }
+}
+
+@media (max-height: 500px) {
+  .puntos{
+    top: -25%;
+  }
 }
